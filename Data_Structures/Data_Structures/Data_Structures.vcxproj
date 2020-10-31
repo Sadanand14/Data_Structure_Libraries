@@ -142,6 +142,7 @@
     <ClInclude Include="PreAllocated_SimpleDictionary.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Dijkstra_Algo.c" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

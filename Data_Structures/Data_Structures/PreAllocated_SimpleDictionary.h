@@ -846,6 +846,8 @@ int PreAllocated_SimpleDictionary<T, F>::RotateSubTreeToRight(int TreeRoot)
 	//Assign treeRoot as the new Right child of the old treeRoot right Child;
 	m_nodePool[TreeRoot].m_parent = pt_LC;
 	m_nodePool[pt_LC].m_right = TreeRoot;
+
+	return pt_LC;
 }
 
 
