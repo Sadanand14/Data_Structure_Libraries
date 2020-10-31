@@ -80,18 +80,11 @@ public:
     PreAllocated_SimpleDictionary& operator=(PreAllocated_SimpleDictionary&&) = delete;
     PreAllocated_SimpleDictionary& operator=(const PreAllocated_SimpleDictionary&) = delete;
 
-    // Add an entry to the dictionary
-    //  pKey   - Key value (Null terminated string)
-    //  pValue - pointer to the value
-    //  pfnFreeValue - Function that will be called on removal of the entry (using pValue as the argument)
-    // Returns true if the key and value were successfully added; otherwise, false.
+
     bool Add(T pKey, F pValue);
 
-    // Returns true if the key was successfully removed; otherwise, false.
     bool Remove(T pKey);
 
-    // Attempts to find the value associated with the passed key. If the key is found, the value
-    // of the key is stored in pOutValue and true is returned; otherwise, false is returned.
     bool Find(T pKey, F* pOutValue) const;
 
     //interface
